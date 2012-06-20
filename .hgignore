@@ -1,0 +1,5 @@
+glob:*.suo
+glob:**/bin/**
+glob:**/obj/**
+glob:Source/packages/**
+glob:Binaries/**
