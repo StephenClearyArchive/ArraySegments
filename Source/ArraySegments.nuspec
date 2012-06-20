@@ -3,14 +3,14 @@
  <metadata>
   <id>ArraySegments</id>
   <version>1.0.2</version>
-  <title>ArraySegments (by Nito Programs)</title>
+  <title>ArraySegments</title>
   <authors>Stephen Cleary</authors>
   <owners>Stephen Cleary</owners>
   <summary>Lightweight extension methods for ArraySegment&lt;T&gt;, particularly useful for byte arrays.</summary>
   <description>Lightweight extension methods for ArraySegment&lt;T&gt;, particularly useful for byte arrays.</description>
   <language>en-US</language>
   <projectUrl>http://arraysegments.codeplex.com</projectUrl>
-  <iconUrl>http://www.codeplex.com/Download?ProjectName=arraysegments&DownloadId=391990</iconUrl>
+  <iconUrl>http://download.codeplex.com/Download?ProjectName=arraysegments&amp;DownloadId=392057</iconUrl>
   <tags>nito arraysegments arraysegment net40 sl4 wp7 metro</tags>
   <references>
    <reference file="ArraySegments.dll" />
