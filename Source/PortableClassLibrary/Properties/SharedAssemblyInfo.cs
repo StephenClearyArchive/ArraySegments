@@ -6,4 +6,4 @@ using System.Reflection;
 [assembly: AssemblyCopyright("Copyright © 2012 Nito Programs")]
 [assembly: CLSCompliant(true)]
 
-[assembly: AssemblyVersion("1.0.1")]
+[assembly: AssemblyVersion("1.0.2")]

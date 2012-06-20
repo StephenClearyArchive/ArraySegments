@@ -2,7 +2,7 @@
 <package>
  <metadata>
   <id>ArraySegments</id>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <title>ArraySegments (by Nito Programs)</title>
   <authors>Stephen Cleary</authors>
   <owners>Stephen Cleary</owners>
@@ -10,15 +10,18 @@
   <description>Lightweight extension methods for ArraySegment&lt;T&gt;, particularly useful for byte arrays.</description>
   <language>en-US</language>
   <projectUrl>http://arraysegments.codeplex.com</projectUrl>
+  <iconUrl>http://www.codeplex.com/Download?ProjectName=arraysegments&DownloadId=391990</iconUrl>
   <tags>nito arraysegments arraysegment net40 sl4 wp7 metro</tags>
   <references>
    <reference file="ArraySegments.dll" />
   </references>
   <releaseNotes>
+   [1.0.2] Added readme.txt and icon.
    [1.0.1] Changed hosting to its own project on CodePlex.
   </releaseNotes>
  </metadata>
  <files>
+  <file src="Readme.txt" target="" />
   <file src="**\*.cs" target="src" />
   <file src="NET 4.0 Client\bin\Release\ArraySegments.dll" target="lib\net40-client" />
   <file src="NET 4.0 Client\bin\Release\ArraySegments.pdb" target="lib\net40-client" />
