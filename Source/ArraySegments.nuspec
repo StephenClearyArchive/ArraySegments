@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+ <metadata>
+  <id>ArraySegments</id>
+  <version>1.0.1</version>
+  <title>ArraySegments (by Nito Programs)</title>
+  <authors>Stephen Cleary</authors>
+  <owners>Stephen Cleary</owners>
+  <summary>Lightweight extension methods for ArraySegment&lt;T&gt;, particularly useful for byte arrays.</summary>
+  <description>Lightweight extension methods for ArraySegment&lt;T&gt;, particularly useful for byte arrays.</description>
+  <language>en-US</language>
+  <projectUrl>http://arraysegments.codeplex.com</projectUrl>
+  <tags>nito arraysegments arraysegment net40 sl4 wp7 metro</tags>
+  <references>
+   <reference file="ArraySegments.dll" />
+  </references>
+  <releaseNotes>
+   [1.0.1] Changed hosting to its own project on CodePlex.
+  </releaseNotes>
+ </metadata>
+ <files>
+  <file src="**\*.cs" target="src" />
+  <file src="NET 4.0 Client\bin\Release\ArraySegments.dll" target="lib\net40-client" />
+  <file src="NET 4.0 Client\bin\Release\ArraySegments.pdb" target="lib\net40-client" />
+  <file src="NET 4.0 Client\bin\Release\ArraySegments.xml" target="lib\net40-client" />
+  <file src="NET 4.0 Client\bin\Release\CodeContracts\ArraySegments.Contracts.dll" target="lib\net40-client\CodeContracts" />
+  <file src="PortableClassLibrary\bin\Release\ArraySegments.dll" target="lib\sl4" />
+  <file src="PortableClassLibrary\bin\Release\ArraySegments.pdb" target="lib\sl4" />
+  <file src="PortableClassLibrary\bin\Release\ArraySegments.xml" target="lib\sl4" />
+  <file src="PortableClassLibrary\bin\Release\ArraySegments.dll" target="lib\sl3-wp" />
+  <file src="PortableClassLibrary\bin\Release\ArraySegments.pdb" target="lib\sl3-wp" />
+  <file src="PortableClassLibrary\bin\Release\ArraySegments.xml" target="lib\sl3-wp" />
+  <file src="PortableClassLibrary\bin\Release\ArraySegments.dll" target="lib\netcore45" />
+  <file src="PortableClassLibrary\bin\Release\ArraySegments.pdb" target="lib\netcore45" />
+  <file src="PortableClassLibrary\bin\Release\ArraySegments.xml" target="lib\netcore45" />
+ </files>
+</package>
