@@ -33,8 +33,11 @@ if (!(Test-Path '..\Binaries')) {
   New-Item '..\Binaries' -type directory | Out-Null
 }
 
-# Modify NuGet version to a dev version if we're not on the Main branch.
-if ($branch -ne 'Main') {
+# If this is an official build, create a tag; otherwise, add a prerelease to the NuGet version.
+if ($branch -eq 'Main') {
+  hg tag $version
+}
+else {
   $version = $version + '-dev-' + (Get-Date).ToString("ddHHmmss")
 }
 
