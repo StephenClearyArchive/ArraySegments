@@ -2,8 +2,8 @@
 <package>
  <metadata>
   <id>ArraySegments</id>
-  <version>1.0.5</version>
   <title>ArraySegments</title>
+  <version>$version$</version>
   <authors>Stephen Cleary</authors>
   <owners>Stephen Cleary</owners>
   <summary>Lightweight extension methods for ArraySegment&lt;T&gt;, particularly useful for byte arrays.</summary>
