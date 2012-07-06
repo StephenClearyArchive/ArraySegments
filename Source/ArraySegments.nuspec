@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
  <metadata>
-  <id>ArraySegments</id>
+  <id>Nito.ArraySegments</id>
   <title>ArraySegments</title>
   <version>$version$</version>
   <authors>Stephen Cleary</authors>
@@ -16,7 +16,8 @@
    <reference file="ArraySegments.dll" />
   </references>
   <releaseNotes>
-   [1.0.5 - 1.0.1] Nuget metadata changes.
+   [1.0.6] Changed NuGet package id from "ArraySegments" to "Nito.ArraySegments".
+   [1.0.5 - 1.0.1] NuGet metadata changes.
    [1.0.0] Initial release.
   </releaseNotes>
  </metadata>
