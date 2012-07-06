@@ -43,7 +43,7 @@ else {
 }
 
 # Build NuGet package
-$nuspec = Get-ChildItem '.' -Filter '*.nuspec'
+$nuspec = Get-ChildItem '.' -Filter '*.nuspec' | Select-Object -First 1
 &$nuget.FullName pack -Symbols $nuspec -Version $version -OutputDirectory ..\Binaries
 
 "Built " + $nuspec.BaseName + " version $version"
