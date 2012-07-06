@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+ <metadata>
+  <id>ArraySegments</id>
+  <title>ArraySegments</title>
+  <version>1.0.6</version>
+  <authors>Stephen Cleary</authors>
+  <owners>Stephen Cleary</owners>
+  <summary>Lightweight extension methods for ArraySegment&lt;T&gt;, particularly useful for byte arrays.</summary>
+  <description>Lightweight extension methods for ArraySegment&lt;T&gt;, particularly useful for byte arrays.</description>
+  <language>en-US</language>
+  <projectUrl>http://arraysegments.codeplex.com</projectUrl>
+  <iconUrl>http://download.codeplex.com/Download?ProjectName=arraysegments&amp;DownloadId=392090</iconUrl>
+  <tags>nito arraysegments arraysegment net40 sl4 wp7 metro</tags>
+  <releaseNotes>
+   [1.0.6] Changed NuGet package id from "ArraySegments" to "Nito.ArraySegments".
+   [1.0.5 - 1.0.1] NuGet metadata changes.
+   [1.0.0] Initial release.
+  </releaseNotes>
+  <dependencies>
+   <dependency id="Nito.ArraySegments"/>
+  </dependencies>
+ </metadata>
+</package>
