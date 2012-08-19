@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics.Contracts;
 using System.Diagnostics.CodeAnalysis;
-
-// TODO (after VS2012 is released): Update this to inlcude IReadOnlyList<T> on .NET 4.5.
+using System.Reflection;
 
 namespace ArraySegments
 {
@@ -13,7 +12,11 @@ namespace ArraySegments
     /// A wrapper around an array segment, providing <see cref="IList{T}"/> and <see cref="System.Collections.IList"/> implementations.
     /// </summary>
     /// <typeparam name="T">The type of elements contained in the array.</typeparam>
+#if NO_I_READ_ONLY_LIST
     public sealed class ArraySegmentListWrapper<T> : IList<T>, System.Collections.IList
+#else
+    public sealed class ArraySegmentListWrapper<T> : IList<T>, System.Collections.IList, IReadOnlyList<T>
+#endif
     {
         /// <summary>
         /// The array segment.
@@ -232,7 +235,11 @@ namespace ArraySegments
                 return true;
             }
 
+#if NO_TYPE_INFO
             if (item == null && !typeof(T).IsValueType)
+#else
+            if (item == null && !typeof(T).GetTypeInfo().IsValueType)
+#endif
             {
                 return true;
             }

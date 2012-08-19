@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortableClassLibrary", "PortableClassLibrary\PortableClassLibrary.csproj", "{5684694E-4EDF-4640-9CCE-9670D5BBCE77}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 4.0 Client", "NET 4.0 Client\NET 4.0 Client.csproj", "{F798E927-F9D3-40AE-9202-49F63893AFF9}"
@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C20A80
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 4.5 and Store", "NET 4.5 and Store\NET 4.5 and Store.csproj", "{F1C160F8-A260-4419-8907-CDC05E27D546}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,12 @@ Global
 		{F798E927-F9D3-40AE-9202-49F63893AFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F798E927-F9D3-40AE-9202-49F63893AFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F798E927-F9D3-40AE-9202-49F63893AFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C160F8-A260-4419-8907-CDC05E27D546}.Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C160F8-A260-4419-8907-CDC05E27D546}.Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{F1C160F8-A260-4419-8907-CDC05E27D546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C160F8-A260-4419-8907-CDC05E27D546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C160F8-A260-4419-8907-CDC05E27D546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C160F8-A260-4419-8907-CDC05E27D546}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
