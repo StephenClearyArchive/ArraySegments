@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C20A80
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 4.5 and Store", "NET 4.5 and Store\NET 4.5 and Store.csproj", "{F1C160F8-A260-4419-8907-CDC05E27D546}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit Tests", "Unit Tests\Unit Tests.csproj", "{1099D276-9742-42C8-8373-C3C179A3BA54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Code Analysis|Any CPU = Code Analysis|Any CPU
@@ -37,6 +39,12 @@ Global
 		{F1C160F8-A260-4419-8907-CDC05E27D546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1C160F8-A260-4419-8907-CDC05E27D546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1C160F8-A260-4419-8907-CDC05E27D546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1099D276-9742-42C8-8373-C3C179A3BA54}.Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{1099D276-9742-42C8-8373-C3C179A3BA54}.Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{1099D276-9742-42C8-8373-C3C179A3BA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1099D276-9742-42C8-8373-C3C179A3BA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1099D276-9742-42C8-8373-C3C179A3BA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1099D276-9742-42C8-8373-C3C179A3BA54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
