@@ -4,3 +4,5 @@ glob:**/obj/**
 glob:Source/packages/**
 glob:Binaries/**
 glob:Source/AssemblyVersion.cs
+syntax: glob
+**/TestResults/**
