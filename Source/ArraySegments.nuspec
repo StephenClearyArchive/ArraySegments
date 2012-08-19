@@ -11,11 +11,12 @@
   <language>en-US</language>
   <projectUrl>http://arraysegments.codeplex.com</projectUrl>
   <iconUrl>http://download.codeplex.com/Download?ProjectName=arraysegments&amp;DownloadId=392090</iconUrl>
-  <tags>nito arraysegments arraysegment net40 sl4 wp7 metro</tags>
+  <tags>nito arraysegments arraysegment net45 net40 sl4 wp7</tags>
   <references>
    <reference file="ArraySegments.dll" />
   </references>
   <releaseNotes>
+   [1.0.7] Official .NET 4.5 and Windows Store support (code contracts and IReadOnlyList).
    [1.0.6] Changed NuGet package id from "ArraySegments" to "Nito.ArraySegments".
    [1.0.5 - 1.0.1] NuGet metadata changes.
    [1.0.0] Initial release.
@@ -24,18 +25,33 @@
  <files>
   <file src="Readme.txt" target="" />
   <file src="**\*.cs" target="src" />
+
+  <!-- .NET 4.0 Client Profile -->
   <file src="NET 4.0 Client\bin\Release\ArraySegments.dll" target="lib\net40-client" />
   <file src="NET 4.0 Client\bin\Release\ArraySegments.pdb" target="lib\net40-client" />
   <file src="NET 4.0 Client\bin\Release\ArraySegments.xml" target="lib\net40-client" />
   <file src="NET 4.0 Client\bin\Release\CodeContracts\ArraySegments.Contracts.dll" target="lib\net40-client\CodeContracts" />
+
+  <!-- Silverlight 4 -->
   <file src="PortableClassLibrary\bin\Release\ArraySegments.dll" target="lib\sl4" />
   <file src="PortableClassLibrary\bin\Release\ArraySegments.pdb" target="lib\sl4" />
   <file src="PortableClassLibrary\bin\Release\ArraySegments.xml" target="lib\sl4" />
+
+  <!-- Windows Phone 7 -->
   <file src="PortableClassLibrary\bin\Release\ArraySegments.dll" target="lib\sl3-wp" />
   <file src="PortableClassLibrary\bin\Release\ArraySegments.pdb" target="lib\sl3-wp" />
   <file src="PortableClassLibrary\bin\Release\ArraySegments.xml" target="lib\sl3-wp" />
-  <file src="PortableClassLibrary\bin\Release\ArraySegments.dll" target="lib\netcore45" />
-  <file src="PortableClassLibrary\bin\Release\ArraySegments.pdb" target="lib\netcore45" />
-  <file src="PortableClassLibrary\bin\Release\ArraySegments.xml" target="lib\netcore45" />
+
+  <!-- .NET 4.5 -->
+  <file src="NET 4.5 and Store\bin\Release\ArraySegments.dll" target="lib\net45" />
+  <file src="NET 4.5 and Store\bin\Release\ArraySegments.pdb" target="lib\net45" />
+  <file src="NET 4.5 and Store\bin\Release\ArraySegments.xml" target="lib\net45" />
+  <file src="NET 4.5 and Store\bin\Release\CodeContracts\ArraySegments.Contracts.dll" target="lib\net45\CodeContracts" />
+
+  <!-- Windows Store -->
+  <file src="NET 4.5 and Store\bin\Release\ArraySegments.dll" target="lib\netcore45" />
+  <file src="NET 4.5 and Store\bin\Release\ArraySegments.pdb" target="lib\netcore45" />
+  <file src="NET 4.5 and Store\bin\Release\ArraySegments.xml" target="lib\netcore45" />
+  <file src="NET 4.5 and Store\bin\Release\CodeContracts\ArraySegments.Contracts.dll" target="lib\netcore45\CodeContracts" />
  </files>
 </package>
