@@ -2,7 +2,7 @@ Param($version = "0.0.0")
 $ErrorActionPreference = "Stop"
 
 # Set environment variables for Visual Studio Command Prompt
-pushd 'C:\Program Files\Microsoft Visual Studio 10.0\VC'
+pushd 'C:\Program Files\Microsoft Visual Studio 11.0\VC'
 cmd /c “vcvarsall.bat&set” |
 foreach {
   if ($_ -match “=”) {
