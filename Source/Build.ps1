@@ -1,8 +1,18 @@
 Param($version = "0.0.0")
 $ErrorActionPreference = "Stop"
 
+if ($version -eq "0.0.0") {
+  throw "Pass a version number to this script."
+}
+
 # Set environment variables for Visual Studio Command Prompt
-pushd 'C:\Program Files\Microsoft Visual Studio 11.0\VC'
+if (Test-Path 'C:\Program Files\Microsoft Visual Studio 11.0\VC') {
+  pushd 'C:\Program Files\Microsoft Visual Studio 11.0\VC'
+}
+else {
+  pushd 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC'
+}
+
 cmd /c “vcvarsall.bat&set” |
 foreach {
   if ($_ -match “=”) {
@@ -19,11 +29,8 @@ else {
   $nuget = Get-ChildItem '..\Util' -Filter 'nuget.exe'
 }
 
-# Get our current branch
-$branch = hg branch
-
 # Write out version info for dll
-"using System.Reflection;`n[assembly: AssemblyVersion(`"$version`")]" > 'AssemblyVersion.cs'
+"using System.Reflection;`r`n[assembly: AssemblyVersion(`"$version`")]`r`n" > 'AssemblyVersion.cs'
 
 # Build solution
 $solution = Get-ChildItem '.' -Filter '*.sln'
@@ -34,16 +41,11 @@ if (!(Test-Path '..\Binaries')) {
   New-Item '..\Binaries' -type directory | Out-Null
 }
 
-# If this is an official build, create a tag; otherwise, add a prerelease to the NuGet version.
-if ($branch -eq 'Main') {
-  hg tag $version
-}
-else {
-  $version = $version + '-dev-' + (Get-Date).ToString("ddHHmmss")
-}
-
 # Build NuGet package
 $nuspec = Get-ChildItem '.' -Filter '*.nuspec' | Select-Object -First 1
 &$nuget.FullName pack -Symbols $nuspec -Version $version -OutputDirectory ..\Binaries
+
+# Create a tag.
+hg tag $version
 
 "Built " + $nuspec.BaseName + " version $version"
