@@ -38,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
+      <Link>Properties\AssemblyVersion.cs</Link>
     </Compile>
     <Compile Include="ArraySegmentExtensions.cs" />
     <Compile Include="ArraySegmentListWrapper.cs" />
