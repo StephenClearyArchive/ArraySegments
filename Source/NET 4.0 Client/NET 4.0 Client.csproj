@@ -158,7 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
+      <Link>Properties\AssemblyVersion.cs</Link>
     </Compile>
     <Compile Include="..\PortableClassLibrary\ArraySegmentExtensions.cs">
       <Link>ArraySegmentExtensions.cs</Link>

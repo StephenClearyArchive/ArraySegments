@@ -72,6 +72,9 @@
     <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
     <Compile Include="..\PortableClassLibrary\ArraySegmentExtensions.cs">
       <Link>ArraySegmentExtensions.cs</Link>
     </Compile>
