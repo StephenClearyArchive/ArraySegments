@@ -16,6 +16,7 @@
    <reference file="ArraySegments.dll" />
   </references>
   <releaseNotes>
+   [1.0.8] Fixed version number in assemblies.
    [1.0.7] Official .NET 4.5 and Windows Store support (code contracts and IReadOnlyList).
    [1.0.6] Changed NuGet package id from "ArraySegments" to "Nito.ArraySegments".
    [1.0.5 - 1.0.1] NuGet metadata changes.
