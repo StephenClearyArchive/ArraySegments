@@ -10,12 +10,13 @@
   <description>Lightweight extension methods for ArraySegment&lt;T&gt;, particularly useful for byte arrays.</description>
   <language>en-US</language>
   <projectUrl>http://arraysegments.codeplex.com</projectUrl>
-  <iconUrl>http://download.codeplex.com/Download?ProjectName=arraysegments&amp;DownloadId=392090</iconUrl>
+  <iconUrl>http://download-codeplex.sec.s-msft.com/Download?ProjectName=arraysegments&amp;DownloadId=483861</iconUrl>
   <tags>nito arraysegments arraysegment net45 net40 sl4 wp7</tags>
   <references>
    <reference file="ArraySegments.dll" />
   </references>
   <releaseNotes>
+   [1.0.9] Gave icon a transparent background.
    [1.0.8] Fixed version number in assemblies.
    [1.0.7] Official .NET 4.5 and Windows Store support (code contracts and IReadOnlyList).
    [1.0.6] Changed NuGet package id from "ArraySegments" to "Nito.ArraySegments".
